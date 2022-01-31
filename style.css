@@ -196,7 +196,7 @@
   stroke: #ccc;
   stroke-width: 1px;
 }
-#intro{
+.intro{
     position: absolute;
     left: 0;
     top: 50%;
