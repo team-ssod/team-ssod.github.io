@@ -20,106 +20,137 @@
 
   <style>
     .card-title {
-        display: block;
-        font-family: Tahoma;
-        font-size: 25px;
-        color: #ffffff;
-        line-height: 100px;
-        text-align: left;
+      display: block;
+      font-family: Tahoma;
+      font-size: 25px;
+      color: #ffffff;
+      line-height: 100px;
+      text-align: left;
     }
+
     * {
-  box-sizing: border-box;
-}
-.transparent {
-  position: relative;
-  max-width: 400px;
-  margin: auto;
-}
+      box-sizing: border-box;
+    }
 
-.transparent img {vertical-align: middle;}
+    .transparent {
+      position: relative;
+      max-width: 400px;
+      margin: auto;
+    }
 
-.transparent .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
+    .transparent img {
+      vertical-align: middle;
+    }
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-.slideimg {vertical-align: middle; height:350px; padding-left: 45%;
-padding-right: 20%;}
+    .transparent .content {
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0);
+      /* Fallback color */
+      background: rgba(0, 0, 0, 0.5);
+      /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: 0px;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-/* Caption text */
-.slidetext {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+    body {
+      font-family: Verdana, sans-serif;
+    }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+    .mySlides {
+      display: none;
+    }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 0px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+    .slideimg {
+      vertical-align: middle;
+      height: 350px;
+      padding-left: 45%;
+      padding-right: 20%;
+    }
 
-.active {
-  background-color: #717171;
-}
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: 0px;
+    }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+    /* Caption text */
+    .slidetext {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 0px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
+    .active {
+      background-color: #717171;
+    }
 
-.button {
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+
+    .button {
       border: none;
       color: white;
       padding: 2px;
@@ -130,10 +161,16 @@ padding-right: 20%;}
       margin: 4px 100px;
       cursor: pointer;
     }
-    .button1 {background-color: #e7e7e7; color: black; border-radius: 12px;}
-    
-  
-    </style>
+
+    .button1 {
+      background-color: #e7e7e7;
+      color: black;
+      border-radius: 12px;
+    }
+    .main-content{
+      margin-top: -14rem;
+    }
+  </style>
 
   <!-- Favicons -->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -145,259 +182,208 @@ padding-right: 20%;}
   <meta property="og:image" content="images/logo-light.png" />
   <meta property="og:url" content="" />
   <meta name="twitter:card" content="summary_large_image" />
-
-
 </head>
-<img src="images/events1.jfif" alt="234567890-" style="position: absolute; width: 100%; height:100%">
+
+<img src="images/events1.jfif" alt="234567890-" style="min-height: 100vh; object-fit: cover;">
 
 <body>
   <section style="background-color: #000000;">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
-    <div class="container">
-      <div class="navbar-left">
-        <button class="navbar-toggler" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">
-          <img class="logo-dark" src="images\logo2.png" alt="logo" />
-          <img class="logo-light" src="images\logo2.png" alt="logo" />
-        </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img class="logo-dark" src="images\logo2.png" alt="logo" />
+            <img class="logo-light" src="images\logo2.png" alt="logo" />
+          </a>
+        </div>
+
+        <section class="navbar-mobile">
+          <span class="navbar-divider d-mobile-none"></span>
+
+          <ul class="nav nav-navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="arrow"></span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Events.html">Events <span class="arrow"></span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Members.html">Members <span class="arrow"></span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Achievements.html">Achievements <span class="arrow"></span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Walkthrough.html">Walkthrough <span class="arrow"></span></a>
+            </li>
+
+          </ul>
+        </section>
+
       </div>
+    </nav>
+    <!-- /.navbar -->
 
-      <section class="navbar-mobile">
-        <span class="navbar-divider d-mobile-none"></span>
-
-        <ul class="nav nav-navbar">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home <span class="arrow"></span></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="Events.html">Events <span class="arrow"></span></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="Members.html">Members <span class="arrow"></span></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="Achievements.html">Achievements <span class="arrow"></span></a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="Walkthrough.html">Walkthrough <span class="arrow"></span></a>
-          </li>
-
-        </ul>
-      </section>
-
-    </div>
-  </nav>
-  <!-- /.navbar -->
-      
-  <!-- Header -->
-  <header class="header text-white h-fullscreen overflow-hidden" style="
+    <!-- Header -->
+    <header class="header text-white overflow-hidden" style="
   background-image: linear-gradient(-45deg, #000000 100%);
       ">
-</header>
-<!-- /.header -->
-
- <br><br><br><br><br><br><br><br><br><br><br><br>
-
-  <!-- Main Content -->
-  <main class="main-content">
-   <!--
-    <section class="section" id="aboutus">
-      <div class="container">
-        <header class="section-header">
-          <h2 style="color:rgb(77, 14, 136);">CTFs</h2>
-          <hr />
-        </header>
-
-        <div class="whole-wrap" >
-          <div class="container  box_1170">
-          <div class="section-top-border">
-          <a href="inctf.in"> <h3 class="mb-30"></h3></a>
-          <div class="row">
-          <div class="col-md-3">
-          <img src="images\ctf.png" alt="" style="height: 200px;" class="img-fluid">
-          </div>
-          <div class="col-md-9 mt-sm-20">
-          <p>H4KUN4 M4T4T4 CTF aiming at hackers of all ages, around the world. 
-            hmCTF seeks to always stay one step ahead, featuring advanced challenges to make you 
-            think outside the box and stay current.</p>
-          <br>
-          <a class="boxed-btn3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s" target="_blank"
-          href="https://inctf.in/">Visit</a>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-          </div>
-      </div>
-    </section>
-  -->
-    <!-- 
-    <header class="section-header">
-      <h2 style="color:rgb(77, 14, 136);">GALLERY</h2>
-      <hr />
     </header>
+    <!-- /.header -->
 
-    <div class="slideshow-container">
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
 
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img class="slideimg" src="images\events.jpg" style="width:100%">
-        <div class="slidetext"></div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img class="slideimg" src="images\squad.png" style="width:100%">
-        <div class="slidetext"></div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img class="slideimg" src="images\team.png" style="width:100%">
-        <div class="slidetext"></div>
-      </div>
-      
-      </div>
-      <br>
-      
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div>
-    -->
-<br><br><br><br>
-     <header class="section-header">
-        <h2 style="color:rgb(189, 112, 252); text-align: center;">Workshops, Tech Talks And Webinars</h2>
-        <hr />
+    <!-- Main Content -->
+    <main class="main-content">
+     
+      <!-- <br><br><br><br> -->
+      <header class="my-5">
+        <h2 style="color:rgb(189, 112, 252); text-align: center;margin-top: 6%; margin-bottom: 5%;">Workshops, Tech Talks And Webinars</h2>
       </header>
-    <div class="row">
 
-  <div class="card-deck">
-    <div class="card">
-
-      <div class="card-body">
-        <div class="transparent">
-          <img src="images\Ajay Talk.jpeg" alt="" style="width:100%; height: 500px">
-          <div class="content">
-            <h1 style="text-align: center; color: aqua;">Session</h1>
-            <p style="color: rgb(255, 255, 255);">Ajay SK took a session on the topic 
-              "Binary Exploitation 101" which was organised by We are 
-              plymouth's Chennai Chapter (Now rootecstak community) on June 20th, 2021 6pm through Gmeet.
-            </p>
+        <div class="card-deck m-0">
+          <div class="card">
+            <div class="card-body">
+              <div class="">
+                <img src="images\ajay1.jpeg" alt="" style="width:100%;">
+                <div class="content">
+                  <h1 style="text-align: center; color: aqua;"></h1>
+                  <p style="color: rgb(255, 255, 255);">
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="card">
-      <div class="card-body">
-        <div class="transparent">
-          <img src="images\jo.jpeg" alt="" style="width:100%; height: 500px">
-          <div class="content">
-            <h1 style="text-align: center; color: aqua;">Session</h1>
-            <p style="color: rgb(255, 255, 255);">Jo Praveen took a session on the topic "How To Start CTFs 101"
-              which was organised by OWASP Kanchipuram on Dec 17th through Zoom.
-            </p>
+          <div class="card">
+            <div class="card-body">
+              <div class="">
+                <img src="images\jo.jpeg" alt="" style="width:100%;">
+                <div class="content">
+                  <h1 style="text-align: center; color: aqua;"></h1>
+                  <p style="color: rgb(255, 255, 255);">
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="card">
+          <div class="card">
+            <div class="card-body">
+              <div class="">
+                <img src="images\Abhisek talk.jpeg" alt="" style="width:100%;">
+                <div class="content">
+                  <h1 style="text-align: center; color: aqua;"></h1>
+                  <p style="color: rgb(255, 255, 255);">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="card">
+            <div class="card-body">
+              <div class="">
+                <img src="images\paul1.jpeg" alt="" style="width:100%;">
+                <div class="content">
+                  <h1 style="text-align: center; color: aqua;"></h1>
+                  <p style="color: rgb(255, 255, 255);">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="card">
       <div class="card-body">
         <div class="transparent">
           <img src="images\Abhisek talk.jpeg" alt="" style="width:100%; height: 500px">
           <div class="content">
             <h1 style="text-align: center; color: aqua;">Session</h1>
-            <p style="color: rgb(255, 255, 255);">Abhisek R took a session on the topic 
-              "Analysing and Targeting a web application" which was organised by OWASP Mayiladuthurai
-               on Sep 05th 2021, 10:30am through Gmeet.
+            <p style="color: rgb(255, 255, 255);">
             </p>
           </div>
         </div>
       </div>
-    </div>
-    
-    </div>
-    </div>
-  </div>
+    </div> -->
 
-<div style="width:100px;
+
+        </div>
+      </div>
+
+      <div style="width:100px;
 height:100px;">
-  </div>
-  
-  </main>
+      </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row gap-y align-items-center">
-        <div class="col-6 col-lg-3">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo-dark" src="images\logo2.png" style="width:50%; height:60%;" alt="logo" />
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+          <div class="col-6 col-lg-3">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo-dark" src="images\logo2.png" style="width:50%; height:60%;" alt="logo" />
             </a>
-        </div>
-
-        <div class="col-6 col-lg-3 text-right order-lg-last">
-          <div class="social" style="color:#ffffff;">
-            <a class="wordpress" target="_blank" href="https://github.com/team-ssod"><i 
-              class="fa fa-github fa-fw"></i></a>
-            <a class="social-twitter" target="_blank" href=""><i
-                class="fa fa-twitter"></i></a>
-            <a class="social-linkedin" target="_blank" href="https://www.linkedin.com/in/sophisticated-society-of-delinquents-1a8293230/"><i
-                class="fa fa-linkedin"></i></a>
           </div>
-        </div>
 
-        <div class="col-lg-6">
-          <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
-            <p style="color:#ffffff; font-size: 14px; text-align: center" >Copyright © All Rights Reserved | SSoD 2020</a></p>
-            
+          <div class="col-6 col-lg-3 text-right order-lg-last">
+            <div class="social" style="color:#ffffff;">
+              <a class="wordpress" target="_blank" href="https://github.com/team-ssod"><i
+                  class="fa fa-github fa-fw"></i></a>
+              <a class="social-twitter" target="_blank" href=""><i class="fa fa-twitter"></i></a>
+              <a class="social-linkedin" target="_blank"
+                href="https://www.linkedin.com/in/sophisticated-society-of-delinquents-1a8293230/"><i
+                  class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
 
+          <div class="col-lg-6">
+            <div class="nav nav-bold nav-uppercase nav-trim justify-content-lg-center">
+              <p style="color:#ffffff; font-size: 14px; text-align: center">Copyright © All Rights Reserved | SSoD
+                2020</a></p>
+
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- /.footer -->
+    </footer>
+    <!-- /.footer -->
 
 
 
-  <!-- Scripts -->
- <!-- <script src="page.min.js"></script>
+    <!-- Scripts -->
+    <!-- <script src="page.min.js"></script>
   <script src="script.js"></script>
  -->
-  <script>
-    var slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
     </script>
     <script src="page.min.js"></script>
     <script src="script.js"></script>

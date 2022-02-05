@@ -9,12 +9,12 @@
   <title>SSoD | Achievements</title>
 
   <!-- Styles -->
-  <link href="page.min.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
   <link href="optimize.css" rel="stylesheet" />
   <link href="hof.css" rel="stylesheet" />
   <link href="animation.css" rel="stylesheet" />
   <link rel="stylesheet" href="hof.css">
+  <link href="page.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://css.gg/browser.css' rel='stylesheet'>
@@ -75,6 +75,15 @@
        table,thead,tbody,th,tr{
            border-radius: 10px;
        } 
+       .main-content{
+      margin-top: -14rem;
+    }
+    .ach-banner:hover{
+      transform: unset;
+    }
+    .navbar{
+      position: absolute;
+    }
     </style>
   
 
@@ -84,20 +93,20 @@
 
 </head>
 
-<img src="images\ach.jpg" alt="234567890-" style="position: absolute; width: 100%; height:90%">
+<img src="images\ach.jpg" class="ach-banner" alt="234567890-" style="min-height: 100vh; object-fit: cover;">
 
 <body>
   <section style="background-color: #000000">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
-    <div class="container">
+    <div class="container justify-content-start">
       <div class="navbar-left">
         <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">
-          <img class="logo-dark" src="images\logo2.png" alt="logo" />
-          <img class="logo-light" src="images\logo2.png" alt="logo" />
+        <a class="navbar-brand" style="min-height: 10rem;" href="index.html">
+          <img class="logo-dark mx-5" src="images\logo2.png" alt="logo" />
+          <img class="logo-light mx-5" src="images\logo2.png" alt="logo" />
         </a>
       </div>
 
@@ -134,7 +143,7 @@
 
         
   <!-- Header -->
-  <header class="header text-white h-fullscreen overflow-hidden" style="
+  <header class="header text-white overflow-hidden" style="
   background-image: linear-gradient(-45deg, #000000 100%);
       ">
 
@@ -142,7 +151,7 @@
 <!-- /.header -->
 <section style="background-color: black;">
 
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
 
 
   <!-- Main Content -->
@@ -197,7 +206,7 @@
       </div>
     <section class="session">
       <div class="container">
-<br><br><br><br><br><br>
+<br><br><br><br>
     <header class="section-header">
       <h2 style="color: #a907f5; text-align: center; font-family: sans-serif;">Events Participated And Achievements</h2>
       <hr />
@@ -452,7 +461,7 @@
           
           </div><br><br><br><br><br><br><br>
           
-          <div>
+          <!--<div>
           <p style="color: #ffffff; font-family: sans-serif;">
           <img class="rsideimg" src="images\hof1.png" alt="achievements" style="width:200px;height:150px;margin-right:15px;">
           Palanisamy have got Hall Of Fame (HOF) in Pinterest,
@@ -462,7 +471,7 @@
           Smart Things Vulnerability Disclosure and so on.. <br>
           In Mail.ru he has Accessed Internal API Documentation And Information and also Information Disclosure
           Of Garbage Collection Cycle 'Again'
-        </p>  
+        </p>  -->
           
           </div><br>
           
